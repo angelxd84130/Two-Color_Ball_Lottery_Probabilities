@@ -1,9 +1,11 @@
 import itertools as it
 import pandas as pd
+# 蓝球
+# 产出组合
 def get_all():
     return [i for i in range(1, 17, 1)]
 
-
+# 大/小
 def count_large_small(all):
     large = 0
     count = 0
@@ -13,6 +15,7 @@ def count_large_small(all):
             large += 1
     return large/count, (count-large)/count
 
+# 单/双
 def count_even_odd(all):
     even = 0
     count = 0
@@ -22,6 +25,7 @@ def count_even_odd(all):
             even += 1
     return (count - even) / count, even / count
 
+# 质/合
 def count_prim(all):
     prim_num = [1, 2, 3, 5, 7, 11, 13]
     prim = 0
@@ -32,10 +36,11 @@ def count_prim(all):
             prim += 1
     return prim / count, (count - prim) / count
 
+# 选号
 def count_select_num(all):
     return 1/len(all)
 
-
+# 五行-金木水火土
 def count_blue_five_types(all):
     one = 0
     two = 0
