@@ -42,10 +42,8 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+    <li><a href="#contact">Contact</a></li> 
   </ol>
 </details>
 
@@ -68,7 +66,7 @@ Based on two fixed colors, iterate over all combinations of numbers.
 Calculate the probabilities of each option from the combination based on different game.
 
 ### Games  
-![Two-Color_Ball][Two-Color_Ball]  
+![Two-Color_Ball][product-screenshot0]  
 
   
 
