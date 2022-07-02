@@ -86,7 +86,14 @@ Run the python file base on the game's main color.
 
 1. download/import python packages  
 
-2. Call the game's function.
+2. Call the game's function
+```
+''' blue.py '''
+# get all combinations of numbers
+all = get_all()
+# print out the options' probabilities
+print(count_prim(all))
+```
    
 3. Run the python file
    
