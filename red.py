@@ -292,7 +292,7 @@ def dragon_tiger_even(all):
         count += 1
     return num/count
 
-
+''' test function '''
 all = get_all()
 
 print('********')
