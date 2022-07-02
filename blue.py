@@ -66,6 +66,6 @@ def count_blue_five_types(all):
 
     return (one/count, two/count, three/count, four/count, five/count)
 
-
+''' test function '''
 all = get_all()
 print(count_prim(all))
