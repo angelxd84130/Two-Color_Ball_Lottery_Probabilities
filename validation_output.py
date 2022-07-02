@@ -76,6 +76,9 @@ def count_continue(all):
     result = pd.DataFrame(result, columns=['Combinations', 'nums'])
     result.to_csv("continue_nums.csv", index=False)
 
+    
+''' test function '''  
+  
 all = get_all()
 a = count_dragon_head(all)
 all = get_all()
@@ -87,22 +90,3 @@ c = count_three_terms(all)
 result = a.merge(b, on=['Combinations'], how='left')
 result = result.merge(c, on=['Combinations'], how='left')
 
-# split dataframe to four pages
-#apprix_1 = result.iloc[:300000, :]
-#apprix_2 = result.iloc[300000:600000, :]
-#apprix_3 = result.iloc[600000:900000, :]
-apprix_4 = result.iloc[900000:, :]
-
-#apprix_1.to_excel("two-color-balls.xlsx", sheet_name='1', index=False)
-#apprix_2.to_excel("2.xlsx", sheet_name='2', index=False)
-#apprix_3.to_excel("3.xlsx", sheet_name='3', index=False)
-apprix_4.to_excel("4.xlsx", sheet_name='4', index=False)
-'''
-with pd.ExcelWriter("two-color-balls.xlsx", mode='a') as writer:
-    apprix_2.to_excel(writer, sheet_name='2', index=False)
-with pd.ExcelWriter("two-color-balls.xlsx", mode='a') as writer:
-    apprix_3.to_excel(writer, sheet_name='3', index=False)
-with pd.ExcelWriter("two-color-balls.xlsx", mode='a') as writer:
-    apprix_4.to_excel(writer, sheet_name='4', index=False)
-
-'''
